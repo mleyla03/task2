@@ -1,0 +1,5 @@
+using  System.Text.RegularExpressions;
+string number="+994516497403";
+string pattern =@^((\+994((50|51|55|70|77)))?|(050|051|055|070|077)?){1}[0-9]{7}$
+bool isMatch=Regex.IsMatch(number,pattern);
+Console.WriteLine(isMatch);
